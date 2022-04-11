@@ -1,0 +1,113 @@
+body{
+    background-color: yellowgreen;
+}
+
+.pineapple-duck{
+    border: 1px solid black;
+    position: relative;
+    top: 100px;
+    margin: 50px auto;
+    width: 330px;
+    height: 350px;
+}
+
+.pineapple-leaves{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 10% 100% 0%;
+    background-color: white;
+}
+
+.pineapple-leaves.back{
+    background-color: #095711;
+}
+.back:nth-child(1) {
+    position: absolute;
+    right:100px;
+    top: 0;
+    transform: rotate(-30deg);
+}
+.back:nth-child(2) {
+    position: absolute;
+    right:80px;
+    top: 10px;
+    transform: rotate(-20deg);
+}
+.back:nth-child(3) {
+    position: absolute;
+    right:60px;
+    top: 15px;
+    transform: rotate(-10deg);
+}
+.back:nth-child(4) {
+    position: absolute;
+    right:38px;
+    top: 25px;
+}
+
+.pineapple-leaves.front{
+    background-color: #5FA93C;
+}
+
+.front:nth-child(5) {
+    position: absolute;
+    right:105px;
+    top: 0;
+    transform: rotate(-30deg);
+}
+.front:nth-child(6) {
+    position: absolute;
+    right:85px;
+    top: 10px;
+    transform: rotate(-20deg);
+}
+.front:nth-child(7) {
+    position: absolute;
+    right:65px;
+    top: 15px;
+    transform: rotate(-10deg);
+}
+.front:nth-child(8) {
+    position: absolute;
+    right:43px;
+    top: 25px;
+}
+
+.pineapple{
+    position: absolute;
+    bottom: 0;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background-color: #E4BB28;
+    box-shadow: 0 0 10px 5px green;
+}
+
+.hair{
+    position: absolute;
+    top: 70px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100% 0% 100% 0%;
+    background-color: #F7EDD5;
+}
+.hair.left{
+    left: 46%;
+    transform: rotate(-50deg);
+}
+.hair.right{
+    right: 45%;
+    transform: rotate(-10deg);
+}
+
+.face{
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: #F7EDD5;
+    box-shadow: 0 0 10px 1px rgb(154, 80, 0);
+}
