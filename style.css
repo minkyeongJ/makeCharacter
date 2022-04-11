@@ -1,16 +1,23 @@
+@font-face {
+    font-family: 'Middleschool_student';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_08@1.0/Middleschool_student.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
-    background-color: yellowgreen;
+    background-color: #08022f;
 }
 
 .pineapple-duck{
-    border: 1px solid black;
     position: relative;
     top: 100px;
-    margin: 50px auto;
+    margin: auto;
     width: 330px;
     height: 350px;
 }
 
+/* 파인애플 잎사귀================================================= */
 .pineapple-leaves{
     position: absolute;
     width: 50px;
@@ -18,9 +25,9 @@ body{
     border-radius: 100% 10% 100% 0%;
     background-color: white;
 }
-
+/* 파인애플 잎사귀 뒷부분 */
 .pineapple-leaves.back{
-    background-color: #095711;
+    background-color: #207929;
 }
 .back:nth-child(1) {
     position: absolute;
@@ -45,7 +52,7 @@ body{
     right:38px;
     top: 25px;
 }
-
+/* 파인애플 잎사귀 앞부분 */
 .pineapple-leaves.front{
     background-color: #5FA93C;
 }
@@ -74,16 +81,88 @@ body{
     top: 25px;
 }
 
+/* 파인애플====================================== */
 .pineapple{
     position: absolute;
     bottom: 0;
     width: 330px;
-    height: 330px;
+    height: 335px;
     border-radius: 50%;
-    background-color: #E4BB28;
-    box-shadow: 0 0 10px 5px green;
+    background-color: #f8c718;
 }
 
+.line{
+    border-bottom: 2px solid #f48712;
+    border-radius: 45%;
+}
+.line.left{
+    transform: rotate(-25deg);
+}
+.line.left:nth-of-type(1){
+    position: absolute;
+    width: 70%;
+    top: 28%;
+    left: 5%;
+}
+.line.left:nth-of-type(2){
+    position: absolute;
+    width: 85%;
+    top: 45%;
+    left: 5%;
+}
+.line.left:nth-of-type(3){
+    position: absolute;
+    width: 80%;
+    top: 65%;
+    left: 15%;
+}
+.line.left:nth-of-type(4){
+    position: absolute;
+    width: 55%;
+    top: 83%;
+    left: 35%;
+}
+.line.left:nth-of-type(5){
+    position: absolute;
+    width: 50%;
+    top: 15%;
+    left: 10%;
+}
+
+.line.right{
+    transform: rotate(25deg);
+}
+.line.right:nth-of-type(6){
+    position: absolute;
+    width: 70%;
+    top: 28%;
+    right: 5%;
+}
+.line.right:nth-of-type(7){
+    position: absolute;
+    width: 85%;
+    top: 45%;
+    right: 5%;
+}
+.line.right:nth-of-type(8){
+    position: absolute;
+    width: 80%;
+    top: 65%;
+    right: 15%;
+}
+.line.right:nth-of-type(9){
+    position: absolute;
+    width: 55%;
+    top: 83%;
+    right: 35%;
+}
+.line.right:nth-of-type(10){
+    position: absolute;
+    width: 50%;
+    top: 15%;
+    right: 10%;
+}
+/* 앞머리=========================================== */
 .hair{
     position: absolute;
     top: 70px;
@@ -101,6 +180,8 @@ body{
     transform: rotate(-10deg);
 }
 
+/* 오리얼굴=========================================== */
+/* 오리머리 */
 .face{
     position: absolute;
     bottom: 20px;
@@ -110,4 +191,140 @@ body{
     border-radius: 50%;
     background-color: #F7EDD5;
     box-shadow: 0 0 10px 1px rgb(154, 80, 0);
+}
+/* 오리 눈 */
+.eyes-blue{
+    position: absolute;
+    bottom: 90px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #1B9DD4;
+}
+.eyes-blue.left{
+    left: 31%;
+}
+.eyes-blue.right{
+    right: 31%;
+}
+
+.eyes-black{
+    position: absolute;
+    bottom: 2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+}
+.eyes-black.left{
+    left: 5%;
+}
+.eyes-black.right{
+    right: 5%;
+}
+
+.eyes-light{
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* 오리 입 */
+.mouth-line{
+    position:absolute;
+    bottom: 82px;
+    width: 32px;
+    height: 15px;
+    background-color: #ED6200;
+}
+.mouth-line.left{
+    left: 36%;
+    transform: rotate(-30deg);
+}
+.mouth-line.right{
+    right: 36%;
+    transform: rotate(30deg);
+}
+
+.mouth-coner{
+    position: absolute;
+    bottom: 75px;
+    width: 16px;
+    height: 16px;
+    background-color: #ED6200;
+    border-radius: 50%;
+}
+.mouth-coner.left{
+    left: 34%
+}
+.mouth-coner.right{
+    right: 34%
+}
+
+.mouth-upper{
+    position: absolute;
+    left: 46.5%;
+    bottom: 91px;
+    width: 16px;
+    height: 16px;
+    background-color: #ED6200;
+    border-radius: 50%;
+}
+
+.mouth-bottom{
+    position: absolute;
+    left: 40%;
+    bottom: 75px;
+    width: 45px;
+    height: 15px;
+    background-color: #ED5200;
+    border-radius: 5px 5px 10px 10px;
+}
+
+/* 오리 볼 */
+.heart-left{
+    position: absolute;
+    left:18px;
+    width: 30px;
+    height: 19px;
+    background-color: rgb(255, 44, 79);
+    border-radius: 41% 59% 69% 31% / 48% 100% 0% 52%;
+    transform: rotate(90deg);
+    box-shadow: 0 0 5px 1px rgb(255, 44, 79);
+}
+.heart-right{
+    position: absolute;
+    width: 30px;
+    height: 19px;
+    background-color: rgb(255, 44, 79);
+    border-radius: 41% 59% 69% 31% / 48% 0% 100% 52%;
+    transform: rotate(90deg);
+    box-shadow: 0 0 5px 1px rgb(255, 44, 79);
+}
+
+.cheek{
+    position: absolute;
+    bottom: 90px;
+}
+.cheek.left{
+    left: 10px;
+}
+.cheek.right{
+    right: 60px;
+}
+
+/* 이름 */
+p{  
+    position: absolute;
+    color: white;
+    font-family: 'Middleschool_student';
+    font-size: 50px;
+    margin: 5px auto;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
