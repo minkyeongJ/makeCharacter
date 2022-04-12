@@ -19,7 +19,8 @@ HTML/CSS
 
 ## ✨결과화면
 ### 링크에서 확인하기 👉 https://minkyeongj.github.io/makeCharacter/
-![](./images/pineapple-duck.gif)
+
+![pineapple-duck](./images/pineapple-duck.gif)
 
 <br/>
 
